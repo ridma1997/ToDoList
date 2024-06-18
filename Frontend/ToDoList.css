@@ -1,0 +1,76 @@
+body {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+.container1 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #4d5d7c, #bf94ca);
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.Task-Input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.Task-Input {
+    width: 80%;
+    padding: 10px;
+}
+
+.Task-Input button {
+    padding: 5px 10px;
+    background-color: bisque;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+li.completed {
+    text-decoration: line-through;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Task-Input {
+        flex-direction: column;
+    }
+
+    .Task-Input input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .Task-Input button {
+        width: 100%;
+    }
+}
